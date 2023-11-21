@@ -50,3 +50,9 @@ export default async function handler(
 
   res.status(200).send(zip.toBuffer())
 }
+
+export const config = {
+  api: {
+    responseLimit: false,
+  },
+}
